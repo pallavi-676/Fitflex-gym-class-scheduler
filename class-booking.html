@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FitFlex | Book Class</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+    <div class="logo">FitFlex</div>
+    <nav>
+        <a href="schedule.html">Schedule</a>
+        <a href="instructors.html">Instructors</a>
+        <a href="class-booking.html">Book Class</a>
+    </nav>
+</header>
+
+<section class="booking-section">
+    <h2>Book Your Class</h2>
+
+    <form id="bookingForm">
+        <input type="text" id="selectedClass" placeholder="Selected Class" readonly>
+
+        <input type="text" placeholder="Full Name" required>
+        <input type="email" placeholder="Email" required>
+
+        <select id="pricing">
+            <option value="500">Pay Per Class - ₹500</option>
+            <option value="3000">Monthly Pass - ₹3000</option>
+        </select>
+
+        <div class="checkbox-group">
+            <label class="custom-checkbox">
+                <input type="checkbox" id="bringFriend">
+                <span class="checkmark"></span>
+                <span class="checkbox-text">
+                    Bring a Friend <span class="discount">(10% Discount)</span>
+                </span>
+            </label>
+        </div>
+
+        <p>Total Amount: ₹<span id="totalAmount">500</span></p>
+
+        <button type="submit">Confirm Booking</button>
+
+        <p id="successMessage"></p>
+    </form>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>

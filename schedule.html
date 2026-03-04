@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FitFlex | Schedule</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+    <div class="logo">FitFlex</div>
+    <nav>
+        <a href="schedule.html">Schedule</a>
+        <a href="instructors.html">Instructors</a>
+        <a href="class-booking.html">Book Class</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <div class="hero-content">
+        <h1>Weekly Class Schedule</h1>
+        <p>Book yoga, HIIT & Pilates classes at local studios</p>
+    </div>
+</section>
+
+<section class="calendar-navigation">
+    <button id="prevWeek">← Previous</button>
+    <span id="weekLabel">Week 1</span>
+    <button id="nextWeek">Next →</button>
+</section>
+
+<section class="filter-section">
+    <label>Filter by Difficulty:</label>
+    <select id="difficultyFilter">
+        <option value="all">All</option>
+        <option value="Beginner">Beginner</option>
+        <option value="Intermediate">Intermediate</option>
+        <option value="Advanced">Advanced</option>
+    </select>
+</section>
+
+<section class="schedule-container">
+
+    <div class="class-card" data-difficulty="Beginner">
+        <img src="https://images.unsplash.com/photo-1552196563-55cd4e45efb3" alt="Yoga">
+        <div class="class-content">
+            <h3>Morning Yoga</h3>
+            <p>Instructor: Aisha Khan</p>
+            <p>Difficulty: Beginner</p>
+            <p>Spots Left: <span class="spots">5</span></p>
+            <button class="book-btn">Book Class</button>
+        </div>
+    </div>
+
+    <div class="class-card" data-difficulty="Intermediate">
+        <img src="https://images.unsplash.com/photo-1599058917765-a780eda07a3e" alt="HIIT">
+        <div class="class-content">
+            <h3>HIIT Blast</h3>
+            <p>Instructor: Rahul Mehta</p>
+            <p>Difficulty: Intermediate</p>
+            <p>Spots Left: <span class="spots">3</span></p>
+            <button class="book-btn">Book Class</button>
+        </div>
+    </div>
+
+    <div class="class-card" data-difficulty="Advanced">
+        <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a" alt="Pilates">
+        <div class="class-content">
+            <h3>Pilates Core</h3>
+            <p>Instructor: Neha Sharma</p>
+            <p>Difficulty: Advanced</p>
+            <p>Spots Left: <span class="spots">2</span></p>
+            <button class="book-btn">Book Class</button>
+        </div>
+    </div>
+
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
